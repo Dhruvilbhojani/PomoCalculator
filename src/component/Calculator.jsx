@@ -13,13 +13,13 @@ export const Calculator = (props) => {
         if (operator.includes(value.charAt(len - 1))) {
             const nvalue = value.slice(0, -1);
             setCalc(nvalue);
-            return setRes(eval(nvalue));
+            return setRes(evalMath(nvalue));
         }
 
-        return setCalc(eval(calc).toString());
+        return setCalc(evalMath(calc).toString());
     }
     const del = () => {
-        if (calc == '') {
+        if (calc === '') {
             return;
         }
         const value = calc.slice(0, -1);
@@ -27,10 +27,10 @@ export const Calculator = (props) => {
         const len = value.length;
         if (operator.includes(value.charAt(len - 1))) {
             const nvalue = value.slice(0, -1);
-            setRes(eval(nvalue));
+            setRes(evalMath(nvalue));
         }
         else {
-            setRes(eval(value));
+            setRes(evalMath(value));
         }
 
     }
@@ -40,7 +40,7 @@ export const Calculator = (props) => {
         }
         setCalc(calc + value);
         if (!operator.includes(value)) {
-            setRes(eval(calc + value).toString());
+            setRes(evalMath(calc + value).toString());
         }
     }
     if(props.active){
