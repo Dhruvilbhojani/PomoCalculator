@@ -1,0 +1,38 @@
+p {
+  font-size: 100px;
+}
+
+.pomodoro{
+}
+
+.menu {
+  display: flex;
+}
+
+.menuPomodoro,
+.menuShortBreak,
+.menuLongBreak {
+  margin: 25px;
+  cursor: pointer;
+  color: rgba(255, 7, 255, 0.484);
+}
+
+.timerDisplay{
+    background-color: rgb(84, 21, 86);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.btn{
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    color: rgb(48, 2, 48);
+border-radius: 8px;
+    background-color: rgb(178, 71, 178);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

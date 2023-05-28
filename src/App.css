@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  color: #d6d4d4;
+}
+
+.appMenu {
+  display: flex;
+  justify-content: center;
+  color: rgb(77, 1, 77);
+  border: 1px solid purple;
+}
+
+.menuCalc,
+.menuPomo {
+  flex: 1;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid purple;
+}
